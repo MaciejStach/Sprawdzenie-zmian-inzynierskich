@@ -1,0 +1,783 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.GSuite.Activities.Models</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Platform</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.CodedWorkflows</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.AsyncEnumerable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1078,8810" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="index" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="898,8787" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="RangeDataTable" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="864,8704" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+        <ueab:ExcelProcessScopeX.Body>
+          <ActivityAction x:TypeArguments="ui:IExcelProcess">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="862,8634" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Plik_BP">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:String">Xx</Literal>
+                  </Variable.Default>
+                </Variable>
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Wlaczenie pliku BP, zczytanie Range" sap:VirtualizedContainerService.HintSize="828,450" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="[Plik_BP]">
+                <ueab:ExcelApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,221" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="sd:DataTable" Name="RangeDataTableP" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="416,161" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;H:P&quot;)]" SaveTo="[RangeDataTable]" />
+                    </Sequence>
+                  </ActivityAction>
+                </ueab:ExcelApplicationCard.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ueab:ExcelApplicationCard>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[RangeDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="828,8124" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="826,7951" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,175" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Sprawdzam wiersz: &quot; + (index + 1).ToString + &quot; | Wartość H: &quot; + CurrentRow(0).ToString]" />
+                      <If Condition="[CurrentRow(0).ToString.Trim.Length = 10 AndAlso String.IsNullOrWhiteSpace(CurrentRow(8).ToString)]" sap:VirtualizedContainerService.HintSize="792,7716" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="790,7529" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="756,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Wartość H: &quot; + CurrentRow(0).ToString()]" />
+                            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge SP3GZ" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="756,7294" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,7099" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="Klasa" />
+                                      <Variable x:TypeArguments="sd:DataTable" Name="CSVtoExcel" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Powrót do menu'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="720,194" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="18, 127, 100, 15" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='top' tag='FRAME' /&gt;&lt;webctrl parentid='menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl name='top' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='menu' tag='A' type='' class='' aaname='                 Powrót do menu               ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Powrót do menu' /&gt;" Guid="d01c9e2e-d9c6-4932-a60b-f2142a23f379" InformativeScreenshot="f734119129c9c53c05a653e613d30f47.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.PointOffset>
+                                            <uix:PointOffset />
+                                          </uix:TargetAnchorable.PointOffset>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Sequence DisplayName="Wybranie REF01" sap:VirtualizedContainerService.HintSize="720,57" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Referencje'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="493, 243, 77, 17" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='menu' tag='FRAME' /&gt;&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl aaname='Referencje' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl name='menu' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Referencje' type='' tag='DIV' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Referencje' /&gt;" Guid="14ba8f9e-399d-46c5-8fac-ff892e40042e" InformativeScreenshot="c1479633afd6c2898504a8a1a69a6fb5.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.PointOffset>
+                                              <uix:PointOffset />
+                                            </uix:TargetAnchorable.PointOffset>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'REF01 - Zarzadzanie atr…'" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                        <uix:NClick.HealingAgentBehavior>
+                                          <InArgument x:TypeArguments="uix:NChildHealingAgentBehavior">
+                                            <Literal x:TypeArguments="uix:NChildHealingAgentBehavior" sap2010:WorkflowViewState.IdRef="Literal`1_3" />
+                                          </InArgument>
+                                        </uix:NClick.HealingAgentBehavior>
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="513, 266, 239, 22" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='menu' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='11' tag='TABLE' /&gt;&lt;webctrl class='label' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl name='menu' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='label' type='' tag='TD' aaname='REF01 - Zarzadzanie atrybutami' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='REF01 - Zarzadzanie atrybutami' /&gt;" Guid="fcb0c422-96fa-49d9-a1ce-6d246d4a6781" InformativeScreenshot="8bf2a8064599fedb78dc87c761eb1c92.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6">
+                                            <uix:TargetAnchorable.PointOffset>
+                                              <uix:PointOffset />
+                                            </uix:TargetAnchorable.PointOffset>
+                                            <uix:TargetAnchorable.WaitForReadyArgument>
+                                              <InArgument x:TypeArguments="uix:NWaitForReady">
+                                                <Literal x:TypeArguments="uix:NWaitForReady" sap2010:WorkflowViewState.IdRef="Literal`1_1" Value="Interactive" />
+                                              </InArgument>
+                                            </uix:TargetAnchorable.WaitForReadyArgument>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                    </Sequence>
+                                    <Sequence DisplayName="Wpisanie PN w REF01" sap:VirtualizedContainerService.HintSize="720,329" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT produitFiltre'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,237" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Text="[string.Format(&quot;{0}[k(enter)]&quot;, CurrentRow(0).ToString)]" Version="V5">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="865, 279, 118, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl id='myFilter' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='produitFiltre' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl id='myFilter' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='produitFiltre' type='text' tag='INPUT' class='ecwUpperCase INPUT_text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e0b58e21-378c-4155-8348-b98958bdd6b1" InformativeScreenshot="f814a3e79b2dff3cf7cc10da5c263c00.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.PointOffset>
+                                              <uix:PointOffset />
+                                            </uix:TargetAnchorable.PointOffset>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                      </uix:NTypeInto>
+                                    </Sequence>
+                                    <uix:NCheckState DisplayName="Check App State '1441504280'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="720,6459" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                      <uix:NCheckState.IfExists>
+                                        <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="718,5272" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                          <Sequence.Variables>
+                                            <Variable x:TypeArguments="x:String" Name="Wartosc" />
+                                            <Variable x:TypeArguments="upr:ILocalResource" Name="NowyCSV" />
+                                          </Sequence.Variables>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="684,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Target sie pojawil&quot;]" />
+                                          <Sequence DisplayName="Pobranie atrybutu i klasy PN" sap:VirtualizedContainerService.HintSize="684,369" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NGetText DisplayName="Get Text '1WCF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" TextString="[Klasa]" Version="V5">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="167, 349, 122, 20" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl idx='2' parentid='list2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='list2' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' tag='TD' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="693fc282-f96a-4c55-a92a-a5aaaf1f41fb" InformativeScreenshot="089a9e319c1f348de5e10ce4596a3c49.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                            <uix:NGetText DisplayName="Get Text '043'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,134" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" TextString="[Wartosc]" Version="V5">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="289, 349, 85, 20" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl idx='2' parentid='list2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='list2' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' class='' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="a5dbb7a2-b1fb-4ca6-aaad-1b6f573cf2b1" InformativeScreenshot="b8a5e8b253c7e2aa9219f44ec58cb473.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NGetText.Target>
+                                            </uix:NGetText>
+                                          </Sequence>
+                                          <Sequence DisplayName="Wybranie MOB03 i wpisanie KLASY" sap:VirtualizedContainerService.HintSize="684,57" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Powrót do menu'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="18, 175, 100, 15" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='top' tag='FRAME' /&gt;&lt;webctrl parentid='menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl name='top' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='menu' tag='A' type='' class='' aaname='                 Powrót do menu               ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Powrót do menu' /&gt;" Guid="1ff51e9e-100b-4d8e-a16e-11e257bbe085" InformativeScreenshot="54dc849e32b9a6074708b13e29d01a26.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'Transakcja'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Text="MOB03" Version="V5">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="966, 274, 228, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='menu' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='codeTransaction' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='menu' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='codeTransaction' type='text' tag='INPUT' class='INPUT_text_Actif INPUT_text' aaname='Transakcja' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="775fc1c6-5491-44ce-9254-1cee807ea71c" InformativeScreenshot="d681b663d20c4e822f72e8477fa79460.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="888, 276, 73, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl name='menu' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl name='menu' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='ecwLabelActif ecwLabel' aaname='ransakcja' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Transakcja' /&gt;" Guid="e2808f1b-e216-4162-a87e-7be40e6bb2d5" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                              <uix:NTypeInto.VerifyOptions>
+                                                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                </uix:VerifyExecutionTypeIntoOptions>
+                                              </uix:NTypeInto.VerifyOptions>
+                                            </uix:NTypeInto>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'MOB03 - Szukaj jednoste…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="968, 298, 608, 24" DesignTimeScaleFactor="1.25" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='menu' tag='FRAME' /&gt;&lt;webctrl id='suggest' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='listeTransactions2' tableRow='1' tag='SELECT' /&gt;&lt;webctrl id='transaction_MOB03' tableRow='1' tag='OPTION' /&gt;" FuzzySelectorArgument="&lt;webctrl name='menu' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl id='suggest' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='listeTransactions2' tag='SELECT' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='transaction_MOB03' type='' tag='OPTION' class='transaction' aaname='MOB03 - Szukaj jednostek w magazynie lub w produkcji                                                      ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='MOB03 - Szukaj jednostek w magazynie lub w produkcji' /&gt;" Guid="13ffc929-cafe-4e93-b84d-610e220a4c24" InformativeScreenshot="7634fd0e3cab54ff76b0e3baafa53931.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT encoursChargesPre…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Text="5GA" Version="V5">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="628, 263, 107, 23" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl aaname='Kod Etykieta' parentid='divCriteresLocalisation' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='encoursChargesPresentes' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl aaname='Kod Etykieta' parentid='divCriteresLocalisation' tag='TABLE' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='encoursChargesPresentes' type='text' tag='INPUT' class='INPUT_text_Actif ecwUpperCase ecwInputRequired INPUT_text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ee779953-de07-4d15-a34b-bdbd5df4b1ef" InformativeScreenshot="581dc2f225301d60983d5c5999a7af9c.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                              <uix:NTypeInto.VerifyOptions>
+                                                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                </uix:VerifyExecutionTypeIntoOptions>
+                                              </uix:NTypeInto.VerifyOptions>
+                                            </uix:NTypeInto>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Modyfikuj kryteria wyśw…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="1267, 452, 260, 29" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='ecwButtonId' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='ecwButtonId' type='button' tag='BUTTON' class='BUTTON ecwButton' aaname='Modyfikuj kryteria wyświetlenia' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Modyfikuj kryteria wyświetlenia' /&gt;" Guid="f2badb65-0614-4e65-b832-f6b8d7efeeee" InformativeScreenshot="58dd7fdc9f8016283ea5fd5a30def00d.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="1299, 456, 13, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='ecwAccesskey' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='ecwAccesskey' type='' tag='SPAN' aaname='M' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='M' /&gt;" Guid="1cd530d1-cc41-4c39-a763-a9c70eb8ccfe" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into '1GLP'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Text="[Klasa]" Version="V5">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="1186, 321, 53, 23" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl id='valInfo3' tableRow='83' tag='TABLE' /&gt;&lt;webctrl id='inputValeurInformation3' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl id='valInfo3' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='inputValeurInformation3' type='text' tag='INPUT' class='ecwInputRequired ecwUpperCase INPUT_text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ac42b411-2897-4176-b1de-10525d45bb75" InformativeScreenshot="0eafa273a10ee97bc2d9a75aba29964a.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                              <uix:NTypeInto.VerifyOptions>
+                                                <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                    <InArgument x:TypeArguments="x:Boolean" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                    <InArgument x:TypeArguments="x:Double" />
+                                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                </uix:VerifyExecutionTypeIntoOptions>
+                                              </uix:NTypeInto.VerifyOptions>
+                                            </uix:NTypeInto>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Zatwierdź'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="1701, 510, 105, 30" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' parentid='ecwPopup0' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='___ecwButtonId' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='ecwPopup0' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='___ecwButtonId' type='button' tag='BUTTON' class='BUTTON ecwButton' aaname='Zatwierdź' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Zatwierdź' /&gt;" Guid="f76a0e74-ef4a-4b11-a1b1-3a0a268bcf33" InformativeScreenshot="47b5b3c2a6ab246a05e818abdbd5ffd4.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="1733, 515, 9, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' parentid='ecwPopup0' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='ecwAccesskey' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='ecwPopup0' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl class='ecwAccesskey' type='' tag='SPAN' aaname='Z' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Z' /&gt;" Guid="f00442bd-a474-4e9c-a22a-f9612c19b4f2" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Wyszukaj (F)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                              <uix:NClick.Target>
+                                                <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="1765, 452, 127, 29" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='__ecwButtonId' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='__ecwButtonId' type='button' tag='BUTTON' class='BUTTON ecwButton' aaname='Wyszukaj (F)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Wyszukaj (F)' /&gt;" Guid="8d0eed41-71d2-4f7e-bc73-a3002ba5ad60" InformativeScreenshot="13e66f4d514d456f0b9ee000a9f5c26f.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                      <uix:Target DesignTimeRectangle="1875, 456, 9, 17" ElementType="Text" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;table' tableCol='1' tableRow='1' tag='TABLE' /&gt;&lt;webctrl class='ecwAccesskey' parentid='__ecwButtonId' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='ecwAccesskey' parentid='__ecwButtonId' type='' tag='SPAN' aaname='F' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='F' /&gt;" Guid="17c3b53d-00c2-47f7-ab03-3d3df8058b00" SearchSteps="FuzzySelector" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                  <uix:TargetAnchorable.PointOffset>
+                                                    <uix:PointOffset />
+                                                  </uix:TargetAnchorable.PointOffset>
+                                                </uix:TargetAnchorable>
+                                              </uix:NClick.Target>
+                                            </uix:NClick>
+                                          </Sequence>
+                                          <Sequence DisplayName="Sciagniecie  pliku CSV, konwersja na Excel, LookupDT" sap:VirtualizedContainerService.HintSize="684,4611" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="TrescCSV" />
+                                              <Variable x:TypeArguments="upr:ILocalResource" Name="OczyszczonyCSV" />
+                                              <Variable x:TypeArguments="x:String" Name="SzukanyAtrybut" />
+                                              <Variable x:TypeArguments="x:String" Name="ZnalezionyVIS" />
+                                              <Variable x:TypeArguments="x:String" Name="ZnalezionaData" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\X\Downloads" FileResource="[NowyCSV]" sap:VirtualizedContainerService.HintSize="650,376" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" Timeout="10">
+                                              <ui:GetLastDownloadedFile.Body>
+                                                <ActivityAction>
+                                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SPAN'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Version="V5">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="40, 666, 29, 25" DesignTimeScaleFactor="1.25" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl parentid='ongletResultat' tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='207' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl parentid='ongletResultat' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='' tag='SPAN' class='ecwExport ecwIcone' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="fa3f2738-54ad-4945-8dbe-1d2b3c2b4a27" InformativeScreenshot="860002ec316f5cfc93bfafb78c1fb2ae.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                                                          <uix:TargetAnchorable.PointOffset>
+                                                            <uix:PointOffset />
+                                                          </uix:TargetAnchorable.PointOffset>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                    </uix:NClick>
+                                                  </Sequence>
+                                                </ActivityAction>
+                                              </ui:GetLastDownloadedFile.Body>
+                                            </ui:GetLastDownloadedFile>
+                                            <Sequence DisplayName="Oczyszczenie pliku CSV z 14 linijek, nowy plik 'CSVtoExcel'" sap:VirtualizedContainerService.HintSize="650,57" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:ReadTextFile FileName="{x:Null}" Content="[TrescCSV]" DisplayName="Read Text File" File="[NowyCSV]" sap:VirtualizedContainerService.HintSize="616,124" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+                                              <Assign sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[TrescCSV]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[String.Join(Environment.NewLine, System.Text.RegularExpressions.Regex.Split(TrescCSV, "\r\n|\n|\r").Skip(14))]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                              <ui:WriteTextFile FileName="{x:Null}" DisplayName="Write Text File" File="[LocalResource.FromPath(&quot;C:\Automatyzacja_UiPath\BP_pliki\Oczyszczony.csv&quot;)]" sap:VirtualizedContainerService.HintSize="616,176" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Output="[OczyszczonyCSV]" Text="[TrescCSV]" />
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[If(OczyszczonyCSV Is Nothing, &quot;BLAD: OczyszczonyCSV jest pusty&quot;, &quot;OK: OczyszczonyCSV istnieje&quot;)]" />
+                                              <ui:ReadCsvFile FilePath="{x:Null}" DataTable="[CSVtoExcel]" Delimitator="Semicolon" DelimitatorForViewModel="Semicolon" DisplayName="Read CSV" sap:VirtualizedContainerService.HintSize="616,161" sap2010:WorkflowViewState.IdRef="ReadCsvFile_2" PathResource="[OczyszczonyCSV]" />
+                                            </Sequence>
+                                            <Assign sap:VirtualizedContainerService.HintSize="650,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[SzukanyAtrybut]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[Klasa.Trim.ToUpper + Wartosc.Trim.PadLeft(3, "0"c)]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="650,175" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Szukany atrybut to: &quot; + SzukanyAtrybut]" />
+                                            <Sequence DisplayName="Dodanie kolumny bez koncowek, stworzenie nowej tabeli" sap:VirtualizedContainerService.HintSize="650,712" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:AddDataColumn x:TypeArguments="x:String" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="ATTRIBUT_BEZ_KONCOWKI" DataTable="[CSVtoExcel]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="616,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+                                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[CSVtoExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="616,399" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                                <ui:ForEachRow.Body>
+                                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowCSV" />
+                                                    </ActivityAction.Argument>
+                                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                      <sap:WorkflowViewStateService.ViewState>
+                                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        </scg:Dictionary>
+                                                      </sap:WorkflowViewStateService.ViewState>
+                                                      <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                                        <Assign.To>
+                                                          <OutArgument x:TypeArguments="x:Object">[CurrentRowCSV("ATTRIBUT_BEZ_KONCOWKI")]</OutArgument>
+                                                        </Assign.To>
+                                                        <Assign.Value>
+                                                          <InArgument x:TypeArguments="x:Object">[CurrentRowCSV("ATTRIBUT").ToString.Trim.Split("("c)(0)]</InArgument>
+                                                        </Assign.Value>
+                                                      </Assign>
+                                                    </Sequence>
+                                                  </ActivityAction>
+                                                </ui:ForEachRow.Body>
+                                              </ui:ForEachRow>
+                                            </Sequence>
+                                            <Sequence sap2010:Annotation.AnnotationText="Output: ZnalezionyVIS, ZnalezionaData" DisplayName="LookupDT dla ViS i Daty, " sap:VirtualizedContainerService.HintSize="650,947" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[CSVtoExcel]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="616,329" sap2010:WorkflowViewState.IdRef="LookupDataTable_1" LookupColumnName="ATTRIBUT_BEZ_KONCOWKI" LookupValue="[SzukanyAtrybut]" TargetColumnName="VIS">
+                                                <ui:LookupDataTable.CellValue>
+                                                  <OutArgument x:TypeArguments="x:String">[ZnalezionyVIS]</OutArgument>
+                                                </ui:LookupDataTable.CellValue>
+                                              </ui:LookupDataTable>
+                                              <ui:LookupDataTable LookupColumnIndex="{x:Null}" LookupDataColumn="{x:Null}" RowIndex="{x:Null}" TargetColumnIndex="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[CSVtoExcel]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="616,329" sap2010:WorkflowViewState.IdRef="LookupDataTable_3" LookupColumnName="ATTRIBUT_BEZ_KONCOWKI" LookupValue="[SzukanyAtrybut]" TargetColumnName="DATEDECL">
+                                                <ui:LookupDataTable.CellValue>
+                                                  <OutArgument x:TypeArguments="x:String">[ZnalezionaData]</OutArgument>
+                                                </ui:LookupDataTable.CellValue>
+                                              </ui:LookupDataTable>
+                                              <Assign sap:VirtualizedContainerService.HintSize="616,166" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:String">[ZnalezionaData]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:String">[If(String.IsNullOrWhiteSpace(ZnalezionaData), "", ZnalezionaData.Split(" "c)(0))]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                            <If Condition="[Not String.IsNullOrWhiteSpace(ZnalezionyVIS)]" sap:VirtualizedContainerService.HintSize="650,2086" sap2010:WorkflowViewState.IdRef="If_3">
+                                              <If.Then>
+                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,1073" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Wlaczenie pliku BP, zczytanie Range" sap:VirtualizedContainerService.HintSize="452,1013" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ResizeWindow="None" WorkbookPath="[Plik_BP]">
+                                                    <ueab:ExcelApplicationCard.Body>
+                                                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,793" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Arkusz1&quot;).Cell(&quot;P&quot; + (index + 2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;OK&quot;]" />
+                                                          <ueab:FormatRangeX Alignment="{x:Null}" DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="FormatRangeX_2" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;P&quot; &amp; (index + 2).ToString)]">
+                                                            <ueab:FormatRangeX.Font>
+                                                              <ui:FontOptions Color="Black" FillColor="LightGreen" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                                                            </ueab:FormatRangeX.Font>
+                                                            <ueab:FormatRangeX.Format>
+                                                              <ueab:GeneralFormat />
+                                                            </ueab:FormatRangeX.Format>
+                                                          </ueab:FormatRangeX>
+                                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Arkusz1&quot;).Cell(&quot;M&quot; + (index + 2).ToString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[ZnalezionaData + &quot; - &quot; + ZnalezionyVIS]" />
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Wpisujemy VIS: &quot; + ZnalezionyVIS + &quot; Data: &quot; + ZnalezionaData]" />
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </ueab:ExcelApplicationCard.Body>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ueab:ExcelApplicationCard>
+                                                </Sequence>
+                                              </If.Then>
+                                              <If.Else>
+                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,851" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Wlaczenie pliku BP, zczytanie Range" sap:VirtualizedContainerService.HintSize="452,791" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[Plik_BP]">
+                                                    <ueab:ExcelApplicationCard.Body>
+                                                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                        <ActivityAction.Argument>
+                                                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                        </ActivityAction.Argument>
+                                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,571" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                          <sap:WorkflowViewStateService.ViewState>
+                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                            </scg:Dictionary>
+                                                          </sap:WorkflowViewStateService.ViewState>
+                                                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Arkusz1&quot;).Cell(&quot;P&quot;+(index+2).toString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[&quot;Brak w SP3&quot;]" />
+                                                          <ueab:FormatRangeX Alignment="{x:Null}" DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="FormatRangeX_3" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;P&quot; &amp; (index + 2).ToString)]">
+                                                            <ueab:FormatRangeX.Font>
+                                                              <ui:FontOptions Color="Black" FillColor="Red" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                                                            </ueab:FormatRangeX.Font>
+                                                            <ueab:FormatRangeX.Format>
+                                                              <ueab:GeneralFormat />
+                                                            </ueab:FormatRangeX.Format>
+                                                          </ueab:FormatRangeX>
+                                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;Nie udalo sie znalezc VISU, brak opcji z dnia dzisiejszego&quot;]" />
+                                                        </Sequence>
+                                                      </ActivityAction>
+                                                    </ueab:ExcelApplicationCard.Body>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ueab:ExcelApplicationCard>
+                                                </Sequence>
+                                              </If.Else>
+                                            </If>
+                                          </Sequence>
+                                        </Sequence>
+                                      </uix:NCheckState.IfExists>
+                                      <uix:NCheckState.IfNotExists>
+                                        <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="718,851" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Nie znalezione w SP3 &quot;]" />
+                                          <ueab:ExcelApplicationCard CreateNewFile="False" DisplayName="Wlaczenie pliku BP, zczytanie Range" sap:VirtualizedContainerService.HintSize="616,616" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="[Plik_BP]">
+                                            <ueab:ExcelApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,396" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Arkusz1&quot;).Cell(&quot;P&quot;+(index+2).toString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Nie znaleziono w SP3&quot;]" />
+                                                  <ueab:FormatRangeX Alignment="{x:Null}" DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="FormatRangeX_5" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;P&quot; &amp; (index + 2).ToString)]">
+                                                    <ueab:FormatRangeX.Font>
+                                                      <ui:FontOptions Color="Black" FillColor="Red" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
+                                                    </ueab:FormatRangeX.Font>
+                                                    <ueab:FormatRangeX.Format>
+                                                      <ueab:GeneralFormat />
+                                                    </ueab:FormatRangeX.Format>
+                                                  </ueab:FormatRangeX>
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ueab:ExcelApplicationCard.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ueab:ExcelApplicationCard>
+                                        </Sequence>
+                                      </uix:NCheckState.IfNotExists>
+                                      <uix:NCheckState.Target>
+                                        <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" ContentHash="o5pQBWEX0EyhMWQI72z1zQ" DesignTimeRectangle="295, 350, 72, 18" ElementType="Container" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl idx='2' parentid='list2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableCol='2' tableRow='2' tag='DIV' /&gt;" Guid="c8b21954-c584-49a2-b5a4-88c83ae69665" InformativeScreenshot="e80bf884a38732d22f341761ad625c94.jpg" Reference="tHR8qGJ8o0K5t34N8frhMQ/Y9Mxyef4KkiOvAUF26__4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NCheckState.Target>
+                                    </uix:NCheckState>
+                                  </Sequence>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.OCREngine>
+                                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                                  <ActivityFunc.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                                  </ActivityFunc.Argument>
+                                </ActivityFunc>
+                              </uix:NApplicationCard.OCREngine>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Edge" ContentHash="YMQG_iYf5EenRenPanQMTw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAjHSURBVFhHpdZ5UJNnHgfw4IFIbhS27T87O51xdeUmBpRUrdiyRc5wCZYCBe16TVVcBEREMSLIaQEVo+12qu6uq3aL4FFJn1wkEI4ASQgE8UTU2k3dTuOq3Xx33gRcDODa7nfmnfyV9/t5fs/zJi+N9orxJw8T/aQjxFc6bPaR3oCP7Bq8ZSb4KIzwUergp9LCT9Vl4bWpB3ltanFwV/OvHe/xi8Ij34t5xGzxlz6Er3QYvtLboABeskF4yQbgLe+Dt0IHn5Zu+Kk6wGtVI6hdCoH2qnVZz8XBFboGgeM9Xyl88ljAJz+aeeQRAqTfwV/6AL7SO/CR3oS39Dq8pBSgD54yA7wUPfBWdsNX1Q5/tQaLOyjAFSzvacBK/TmEDZzsihoSv/pEAsnjYj6xWG3l5B/wJw/gJ70HX+ld++qlg/C0ldsBnvIeeCm64KvSIKBVBX67DIs7m22A0L7TeM94EtFDRy3Jw8WJjl0TEkieiPnkRywiP4AC8IjZtno/6V3bBGyrlw1gIVVsu/RYKKMA3fBWdsBP3Qa+hprA5VHAKUQN1lMAJA8XW9cMi6ZGBJGnxYHkCfjEAgrBI98jgDyEv/S+DeAts++9p8xoWz1VvFDWi9/JurFQTgE64dOiAa9VBkHXJazoPYdQwxeIGjyKhJvlWDMsQurILmvGg+yJ5yKIPBMEkifWQPIvG2AR+ScWkUfws+39XfhJh+FtO3z9WCjTPS92vLwUHfBpaUVQ+9dYqm1AiO4MwgeOIvZ6BZJvFyH9fh7WfptlceynBZKn5kDyFHzyeBTwA/wlZiz46hYWNAxhQcM1zL8wAC+ZyTZ+x+Kxy1PRCV+VGks6LmGp9u8I6aUA9YgdKkXSLRHSR7Kw9sFmbDJnip+XB5FnYqp8bPXzTt+A+54rYGedByenEdy8S3DLa4Jb3gXM2XEerxU34c2/dUwotwOoR5GA3yZBcGcjVupOIsxYj4TrRUi6mY+04a3IvLcBGx+mWMcDLEHkKTy//A6cvCtg7rgCVj4Be7cSnCIVuKJWuInUmCNqwdwiGebukWBuwUW8VtSEeY1ahy3QwLdFgSDNBSzt/CtCuj/Dqr5qRPaXYvWNXKTe2YyMu+vwh/sp2PwwTkwLIj8lBpFnmHdyGK5Zl8HYKQezsA2sfVqwD/SCU6oHt0wPtzI95pTr4V7eA/eDnXA/oIJ7kQTu+Q1486x9Gp7yTngrlPBtUWKRqgnBHeewQnsc4X2VEJoKkTi0A8nXt+DD4XX46F4KNjxIGKEFNz/WLjjzLWZvl8A1Xw36ni4wRXqwSoxgl/aDUz4AboUJblUmzKkyYW61CXOrjPCo1MPjYDs8RDK472rEb5vU8JYr4KuQwF95EUGtZ/BW++dY0XUY4XoRYow7kWDaig9uZCL9dhoyh5Pw0V0haAENj/7NLGiDS74Grnt6QBf1gVHcD2aJCayDJrDLBsGpGAS38hrcqq5hTvU1zK3uxxuH+gZ/dchY4lHRle2xX6l+veQqPAkFuAp/ZSMWq7/AW5rjeLujFhH6IgiNeUgwbcOaoXVIu5mGjFvxdsD8Pz/ArJ0dcNndg9lFBriK+kHf3w/6gYEXEeV2BCe/Bb/Z+mX18wM0Gg+RPG3e+WYEKM6CrzyNoJY/YammHiHtpQjvyUGkLgdxxk14/1oaUm+ssQHW3okBzb1yAM753ZhVaIBLkRGz9xltCNdRBKNkAMxSO4KdTUAPK1U7lo9l/meXnwbIToGvPIUlqmNYqi7DCk0pwrQ7ENm7HULDRiQZk5EyGI/060Jk3owEjVtmwswCPZx3GzBrjxEue+2I2Y6IHCXoYSVgRB3KdiweC+8vl3sDZJ8jUF6LYGU5lrWW4t22HQjVbEeEdj1iejMQr0/B+6Y4fGCKQOaNUCttRr4OMwr0mLm7D86FfZi1p8+GcBmP2GcAPbICjKhqMIVHshyLxxJAxMU82XEEymsQrDyIZS17EaLajlDNRkR0pkHYm4pEQwKSjEKk9P8eaaaQQdr0nTrM2GXAjALDRAS1JRRiYxPoERVgCA+DGXesxLF4LLxvqkcWSWuxRH4AS+T78bYyCyvVWQhtW49VbamI6kqBUBuPJEMEkvTvIcUYIqBN26nH9Hz9pIhZowjX2DowomuocjATTgw6FlPxl3wiCJBUIpCUIogUQSAvwHLFNoQoNyBUlWoHtAsh7IxEnDYMyYZQYvvitDy9eSqEMzWJvA64RpSDITwCZvxxCmBlxp+Y8HIR0Fx6PkBSDr5kL5aQAgjINiyXb0KIIgPvtqQirHU1IjUxEHZFUAB7ORWnXD2ZlqfHGGK64ySy1aBHVoERW0+Vg5nwKZjxJ0ZeaB8Nv7mwK1BSaF0syYaAZGG5fD1CFB/iHUUywlQxCG+NMUdpIre88CWnXF2iU64eExC7KIQBLusbQY86NDr+T8cA1DTOv3CjcRFINm8RkI/Fy0gGCZGtIe/IV4tDFbET3wHG4pSrs1AIp/GIfDvCebsK9OhPJgOAFXds0vPw85OjK3bK1cF2OSBmZmtAj6oGY3IAWLH1Fpbw6ItjfUm4q8oTuWFlE84QhTDTHBB2iAH0mBowYo+OPwPjAWAJj4IlPGJhxxw+z46um/DOx4moSuSEV4o54RVm7qpycMPKJplcjk5Ay9FZJ0PMyvwKjJg6MOPFdsTkALBjDoMdXQd2dC3YUTXgRB4CJ7IanIgqcMIrwQmvAHdVuZUbVjbFecjRFdNydHBETN/RCXrsYTDi6u2P4v8HKHasfTE5OvEERJ4ezuuvgBFTaz+McRTiFwH++x740tgnYaUg4xEu6WftW0H9JsSJwYqrf1WAlRNe+T9W7hj7mTA7ImyTiK6l/pTAiqWK7eUs4eGpAGZORNUUe/4qsU/DYn9M7Yjp2Z2YnX4OzOgasGLqwIqus33ai2vBjq6hABZO5KGfueqXJYf6xdQRp1y9eexXc0ZeD5z/2ArXjV+D/vE34GaRn17f3vzojcwzU/5lO+Y/gA44W+vTBHEAAAAASUVORK5CYII=" InformativeScreenshot="22380569e6870b66eabb1cd418e7987b.jpg" Reference="tHR8qGJ8o0K5t34N8frhMQ/2Fhh182qpEW1NyJkExZVkg" Selector="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" Url="X" Version="V3">
+                                  <uix:TargetApp.SapInfo>
+                                    <uix:SAPElementInfo IsSapSubsystem="False" WebAutomationFramework="Default" />
+                                  </uix:TargetApp.SapInfo>
+                                </uix:TargetApp>
+                              </uix:NApplicationCard.TargetApp>
+                            </uix:NApplicationCard>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="790,25" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </ueab:ExcelProcessScopeX.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:ExcelProcessScopeX>
+    </Sequence>
+  </Sequence>
+</Activity>

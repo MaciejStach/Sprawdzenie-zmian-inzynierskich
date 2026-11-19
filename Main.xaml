@@ -141,7 +141,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1078,8810" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1080,8810" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="0" Name="index" />
     </Sequence.Variables>
@@ -168,11 +168,7 @@
             </ActivityAction.Argument>
             <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="862,8634" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="Plik_BP">
-                  <Variable.Default>
-                    <Literal x:TypeArguments="x:String">Xx</Literal>
-                  </Variable.Default>
-                </Variable>
+                <Variable x:TypeArguments="x:String" Default="C:\Automatyzacja_UiPath\BP_pliki\BP zmiany inz.xlsx" Name="Plik_BP" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -219,7 +215,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="792,175" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Info" Message="[&quot;Sprawdzam wiersz: &quot; + (index + 1).ToString + &quot; | Wartość H: &quot; + CurrentRow(0).ToString]" />
-                      <If Condition="[CurrentRow(0).ToString.Trim.Length = 10 AndAlso String.IsNullOrWhiteSpace(CurrentRow(8).ToString)]" sap:VirtualizedContainerService.HintSize="792,7716" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If Condition="[CurrentRow(0).ToString.Replace(&quot; &quot;, &quot;&quot;).Trim.Length = 10 AndAlso String.IsNullOrWhiteSpace(CurrentRow(8).ToString)]" sap:VirtualizedContainerService.HintSize="792,7716" sap2010:WorkflowViewState.IdRef="If_2">
                         <If.Then>
                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="790,7529" sap2010:WorkflowViewState.IdRef="Sequence_12">
                             <sap:WorkflowViewStateService.ViewState>
@@ -296,7 +292,7 @@
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT produitFiltre'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,237" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Text="[string.Format(&quot;{0}[k(enter)]&quot;, CurrentRow(0).ToString)]" Version="V5">
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'INPUT produitFiltre'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,237" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="c695e46e-a569-4340-88a2-4da1b750a84c" Text="[string.Format(&quot;{0}[k(enter)]&quot;, CurrentRow(0).ToString.Replace(&quot; &quot;, &quot;&quot;).Trim)]" Version="V5">
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="gz.sp3.inetpsa.com/login.do" DesignTimeRectangle="865, 279, 118, 22" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl id='myFilter' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='produitFiltre' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;webctrl id='myFilter' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='produitFiltre' type='text' tag='INPUT' class='ecwUpperCase INPUT_text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e0b58e21-378c-4155-8348-b98958bdd6b1" InformativeScreenshot="f814a3e79b2dff3cf7cc10da5c263c00.jpg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SP3/GZ' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
                                             <uix:TargetAnchorable.PointOffset>
@@ -489,7 +485,7 @@
                                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\X\Downloads" FileResource="[NowyCSV]" sap:VirtualizedContainerService.HintSize="650,376" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" Timeout="10">
+                                            <ui:GetLastDownloadedFile File="{x:Null}" IgnoreFiles="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\SF26921\Downloads" FileResource="[NowyCSV]" sap:VirtualizedContainerService.HintSize="650,376" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" Timeout="10">
                                               <ui:GetLastDownloadedFile.Body>
                                                 <ActivityAction>
                                                   <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_19">
@@ -710,7 +706,10 @@
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
                                                   <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Arkusz1&quot;).Cell(&quot;P&quot;+(index+2).toString)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Nie znaleziono w SP3&quot;]" />
-                                                  <ueab:FormatRangeX Alignment="{x:Null}" DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="FormatRangeX_5" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;P&quot; &amp; (index + 2).ToString)]">
+                                                  <ueab:FormatRangeX DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="FormatRangeX_5" Range="[Excel.Sheet(&quot;Arkusz1&quot;).Range(&quot;P&quot; &amp; (index + 2).ToString)]">
+                                                    <ueab:FormatRangeX.Alignment>
+                                                      <ui:AlignmentOptions HorizontalAlignment="xlHAlignCenter" VerticalAlignment="xlVAlignCenter" WrapText="False" />
+                                                    </ueab:FormatRangeX.Alignment>
                                                     <ueab:FormatRangeX.Font>
                                                       <ui:FontOptions Color="Black" FillColor="Red" FontFamilyName="Calibri" Size="11" Style="Regular" UnderlineStyle="None" />
                                                     </ueab:FormatRangeX.Font>
